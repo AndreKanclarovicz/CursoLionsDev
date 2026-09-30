@@ -1,0 +1,12 @@
+{
+  "name": "avaliacao",
+  "version": "1.0.0",
+  "main": "andre.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
