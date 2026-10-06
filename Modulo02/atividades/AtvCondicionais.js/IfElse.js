@@ -95,12 +95,15 @@ const prompt = promptSync();
 // }
 // console.log(`Valor do frete: R$${calcFrete.toFixed(2)}.`);
 
-console.log(`\n9. Sistema de Comissão de Vendas\n`);
+// console.log(`\n9. Sistema de Comissão de Vendas\n`);
 
-let valorVendas = parseFloat(prompt("Qual o valor de total de vendas que realizou esse mês? R:"));
-let comissao
-if (valorVendas >= 20000.00) {
-    valorVendas = valorVendas * 0.05
-} else (valorVendas < 20.000)
-    valorVendas = valorVendas * 0.02
-console.log(`Valor da comissão: R$${valorVendas}.`);
+// let valorVendas = parseFloat(prompt("Qual o valor de total de vendas que realizou esse mês? R:"));
+// let comissao
+// if (valorVendas >= 20000.00) {
+//     valorVendas = valorVendas * 0.05
+// } else (valorVendas < 20.000)
+//     valorVendas = valorVendas * 0.02
+// console.log(`Valor da comissão: R$${valorVendas}.`);
+
+console.log(`\n10. Multa por Atraso no Condomínio.\n`);
+
