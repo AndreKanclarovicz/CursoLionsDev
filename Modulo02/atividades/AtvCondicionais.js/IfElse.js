@@ -107,3 +107,15 @@ const prompt = promptSync();
 
 console.log(`\n10. Multa por Atraso no Condomínio.\n`);
 
+let valorCond = parseFloat(prompt("Qual o valor do condomínio? R:"));
+let quantDias = parseFloat(prompt("Quantos dias está atrasado? R:"));
+let fds = parseFloat(prompt("O vencimento original caiu em um feriado ou final de semana? (sim/nao)"));
+
+let valorFinal = valorCond;
+
+if (quantDias > 0 && fds !== 'sim') {
+    let multa = valorCond * 0.02;
+    let juros = quantDias * 1.00;
+    valorFinal = valorCond + multa + juros;
+}
+console.log(`Valor atualizado do boleto: ${valorFinal}`);
