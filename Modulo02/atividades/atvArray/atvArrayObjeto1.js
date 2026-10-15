@@ -1,7 +1,4 @@
-import promptSync from "prompt-sync";
-const prompt = promptSync();
 
-console.log(`1. Lista de Presença\n`);
 
 let listaAlunos = ["João", "Maria"];
 
