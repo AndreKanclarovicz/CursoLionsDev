@@ -1,9 +1,9 @@
 import promptSync from "prompt-sync";
-import contato from "./contatos.js";
-import atualizar_contato from "./atualizar_contatos.js";
-import listar_contatos from "./listar_contatos.js";
+import contato from "../contatos.js";
+import atualizar_contato from "../atualizar_contatos.js";
+import listar_contatos from "../listar_contatos.js";
 import adicionar_contato from "./adicionar_contatos.js";
-import excluir_contatos from "./excluir_contatos.js"
+import excluir_contatos from "../excluir_contatos.js"
 
 const prompt = promptSync();
 
