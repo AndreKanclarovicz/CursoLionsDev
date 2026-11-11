@@ -1,4 +1,5 @@
 function removeContato(contatos, id) {
+    const indice = contatos.findIndex((contato) => contato.id === id);
 
     if (indice === -1) {
         console.log("Contato não encontrado.");
