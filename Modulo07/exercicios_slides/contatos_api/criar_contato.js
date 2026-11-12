@@ -14,8 +14,12 @@ if (emailExiste) {
 
     if (contato.length > 0) {
     let ultimoContato = contato[contato.length - 1];
-    novocontato.id = ultimoContato.id + 1;
-    
+    novocontato = {
+        id: ultimoContato.id + 1,
+        nome: novocontato.nome,
+        email: novocontato.email,
+        telefone: novocontato.telefone
+    };
 } else {
    
     novocontato.id = 1;
