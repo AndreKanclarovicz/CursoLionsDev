@@ -43,11 +43,11 @@ app.get("/contatos/:id", async (req, res) => {
 // Atualizar o contato da agenda pelo ID
 app.put("/contatos/:id", async (req, res) => {
         try {
-            const atualizado = await Contato.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
-            if (!atualizado) {
+            const contato_atualizado = await Contato.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
+            if (!contato_atualizado) {
                 return res.status(404).json({ mensagem: "Contato não encontrado!" });
             }
-            res.status(200).json({baralho: atualizado});
+            res.status(200).json({baralho: contato_atualizado});
         } catch (error) {
             res.status(400).json({ mensagem: `Erro ao atualizar contato: ${error.message}` });
         }
