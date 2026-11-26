@@ -81,6 +81,19 @@ app.patch("/pedidos/status/:id", async (req, res) => {
     }
 });
 
+// Deletar
+app.delete("/pedidos/:id", async (req, res) => {
+    try {
+        const deletado = await Pedido.findByIdAndDelete(req.params.id);
+        if (!deletado) {
+            return res.status(404).json({ mensagem: "Pedido não encontrado!" });
+        }
+        res.status(200).json({ mensagem: "Pedido deletado com sucesso!" });
+    } catch (error) {
+        res.status(400).json({ mensagem: `Erro ao deletar pedido: ${error.message}` });
+    }
+});
+
 app.listen(port, () => {
     console.log(`Servidor rodando em ${port}`);
 });
